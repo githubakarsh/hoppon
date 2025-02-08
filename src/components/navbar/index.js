@@ -8,12 +8,12 @@ export const AppNavbar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#events">Hoppon</Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate('/')}>Hoppon</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#events">Events</Nav.Link>
-            <Nav.Link ><a onClick={() => navigate('/create-event')}>Create event</a></Nav.Link>
+            <Nav.Link onClick={() => navigate('/')}>Events</Nav.Link>
+            <Nav.Link onClick={() => navigate('/create-event')}>Create event</Nav.Link>
             <Nav.Link href="#your events">Your events</Nav.Link>
           </Nav>
         </Navbar.Collapse>
