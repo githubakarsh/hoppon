@@ -5,7 +5,6 @@ import { useState } from 'react';
 export const CreateEvent = () => {
     const [formData, setFormData] = useState({});
     const submitForm = () => {
-        console.log(formData)
         fetch('http://127.0.0.1:5000/create-event', 
         {method : 'POST', headers: {"Content-Type": "application/json", 'Accept' : 'application/json'} ,body: JSON.stringify(formData)})
          .then((resp) => {
