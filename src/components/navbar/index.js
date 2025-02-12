@@ -13,7 +13,7 @@ export const AppNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={() => navigate('/')}>Events</Nav.Link>
-            <Nav.Link onClick={() => navigate('/create-event')}>Create event</Nav.Link>
+            <Nav.Link onClick={() => navigate('/create-user')}>Signup</Nav.Link>
             <Nav.Link href="#your events">Your events</Nav.Link>
           </Nav>
         </Navbar.Collapse>

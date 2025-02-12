@@ -2,10 +2,10 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 
-export const CreateEvent = () => {
+export const CreateUser = () => {
     const [formData, setFormData] = useState({});
     const submitForm = () => {
-        fetch('http://127.0.0.1:5000/create-event', 
+        fetch('http://127.0.0.1:5000/create-user', 
         {method : 'POST', headers: {"Content-Type": "application/json", 'Accept' : 'application/json'} ,body: JSON.stringify(formData)})
          .then((resp) => {
             console.log(resp);

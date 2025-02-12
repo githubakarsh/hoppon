@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router";
 import { Home } from "../pages/Home";
-import { CreateEvent } from "../pages/events/CreateEvent";
+import { CreateUser } from "../pages/user/CreateUser";
 
 
 
 export const Approuter = () => {
     return <Routes>
     <Route index element={<Home />} />
-    <Route path="/create-event" element={<CreateEvent />}/>
+    <Route path="/create-user" element={<CreateUser />}/>
   </Routes>
 };
