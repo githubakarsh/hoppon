@@ -13,8 +13,9 @@ export const CreateUser = () => {
             console.log("Error");
         });
     };
-    return <>
+    return <div className="signup-main">
     <Form.Control
+    className='signup-input-fields'
           placeholder="Email"
           aria-label="email"
           aria-describedby="basic-addon1"
@@ -24,6 +25,7 @@ export const CreateUser = () => {
         />
         <Form.Control
           placeholder="Phone number"
+          className='signup-input-fields'
           aria-label="phoneNumber"
           aria-describedby="basic-addon2"
           onChange={(event) => setFormData({
@@ -32,6 +34,7 @@ export const CreateUser = () => {
         />
         <Form.Control
           placeholder="Password"
+          className='signup-input-fields'
           aria-label="password"
           aria-describedby="basic-addon3"
           onChange={(event) => setFormData({
@@ -40,6 +43,7 @@ export const CreateUser = () => {
         />
         <Form.Control
           placeholder="Reset Password"
+          className='signup-input-fields'
           aria-label="resetPassword"
           aria-describedby="basic-addon4"
           onChange={(event) => setFormData({
@@ -47,5 +51,5 @@ export const CreateUser = () => {
           })}
         />
  <Button variant="success" onClick={() => submitForm()}>Signup</Button>
-    </>;
+    </div>;
 };
