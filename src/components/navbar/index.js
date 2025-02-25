@@ -22,7 +22,7 @@ export const AppNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {verified_email && <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={() => navigate('/')}>Events</Nav.Link>
+            <Nav.Link onClick={() => navigate('/events')}>Events</Nav.Link>
             <Nav.Link onClick={() => navigate('/join-event')}>Join a event</Nav.Link>
             <Nav.Link href="#your events">Your events</Nav.Link>
             <Nav.Link onClick={() => navigate('/profile')}>Profile</Nav.Link>
